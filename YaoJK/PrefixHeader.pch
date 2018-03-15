@@ -1,0 +1,109 @@
+//
+//  PrefixHeader.pch
+//  YaoJK
+//
+//  Created by IOS App on 18/1/15.
+//  Copyright © 2018年 nova. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "MBProgressHUD.h"
+#import "BaseViewController.h"
+#import "BaseTabVC.h"
+#import "JusaTool.h"
+#import "MJExtension.h"
+#import "MBProgressHUD+NJ.h"
+#import "ResponseLoginUser.h"
+#import "UIView+NJ.h"
+#import "NSDate+NJ.h"
+#import "UIImage+NJ.h"
+#import "NSString+GP.h"
+#import "BaseTabVC.h"
+#import "BaseViewController.h"
+#import "MJRefresh.h"
+#import "UIColor+Extend.h"
+#import "YYKit.h"
+#import "RequestLoginUser.h"
+#import "NSURL+HanEncod.h"
+
+
+#define RGB(r , g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0  blue:(b)/255.0  alpha:(a)]
+
+#define GlobleColor   [UIColor whiteColor]
+
+#define FontBlue RGB(0x00, 0x90, 0xff, 1)
+
+//----------------------常量----------------------常量----------------------常量------------------------
+/**
+ *  是否第一次登录
+ */
+#define Firt_LOG_IN  @"wether_is_First_log_in"
+/**
+ * 是登录
+ */
+#define Log_In @"wether_is_log_in"
+/**
+ * 记住密码
+ */
+#define Rember_pwd @"rember_passwd"
+/**
+ * 记住用户名
+ */
+#define Rember_Name @"rember_username"
+/**
+ * 是否自动登录
+ */
+#define Auto_login @"Auto_login"
+//用户名
+#define UserName @"UserName"
+//密码
+#define UserPwd @"UserPwd"
+//退出登录
+#define Login_out @"Login_out"
+//登录成功
+#define Login_sucess @"Login_sucess"
+
+#define DeviceId @"deviceId"
+
+#define SBJump @"SBJumpSBJumpSBJumpSBJump"
+/**
+ 
+ *  屏幕宽度
+ */
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+/**
+ *  屏幕高度
+ */
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+//监测结束
+#define FINSH @"inspectfinsh"
+//蓝牙状态改变
+#define BlueStateChage @"BlueStateChage"
+
+#define WriteToBlue @"WriteToBlue"
+#define iOS7 ([UIDevice currentDevice].systemVersion.doubleValue >= 7.0)
+
+// 应用程序处于调试阶段时系统会自动给我们定义一个名称叫做DEBUG的宏
+// 应用程序发布的时候, 系统会自动去除名称叫做DEBUG的宏
+#ifdef DEBUG  // 判断是否有DEBUG的宏, 如果有就编译下面一句, 如果没有就编译#else后面的一句
+#define Print(...)  NSLog(__VA_ARGS__)
+#else
+#define Print(...)
+#endif
+#define NA_LogFunc Print(@"%s", __func__)
+#define CallUserName @"callUserName"
+#define DEMO_CALL 1
+
+
+#define NAFilePath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)lastObject]
+#define NAFilePathAppend(fileName) [NAFilePath stringByAppendingPathComponent:fileName]
+#define NAAccountFilePath [NAFilePath stringByAppendingPathComponent:@"account.arch"]
+
+//-----------------------URL-------------------URL-------------------URL------------------------
+
+#define baseUrl @"http://kidneyapi.ideallife.wang:9010"
+
+
+#endif /* PrefixHeader_pch */
