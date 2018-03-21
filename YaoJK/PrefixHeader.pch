@@ -29,32 +29,24 @@
 #import "NSURL+HanEncod.h"
 
 
-#define RGB(r , g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0  blue:(b)/255.0  alpha:(a)]
+//----------------------常量----------------------常量----------------------
 
+#define AliKey @"24747039"
+#define AliScreat @"fe1d22bbd126784ba7e943c5d8154da7"
+
+
+//----------------------常量----------------------常量----------------------
 #define GlobleColor   [UIColor whiteColor]
-
 #define FontBlue RGB(0x00, 0x90, 0xff, 1)
-
-//----------------------常量----------------------常量----------------------常量------------------------
-/**
- *  是否第一次登录
- */
+//是否第一次登录
 #define Firt_LOG_IN  @"wether_is_First_log_in"
-/**
- * 是登录
- */
+// 是登录
 #define Log_In @"wether_is_log_in"
-/**
- * 记住密码
- */
+//记住密码
 #define Rember_pwd @"rember_passwd"
-/**
- * 记住用户名
- */
+//记住用户名
 #define Rember_Name @"rember_username"
-/**
- * 是否自动登录
- */
+//是否自动登录
 #define Auto_login @"Auto_login"
 //用户名
 #define UserName @"UserName"
@@ -64,27 +56,23 @@
 #define Login_out @"Login_out"
 //登录成功
 #define Login_sucess @"Login_sucess"
-
+//设备id
 #define DeviceId @"deviceId"
-
+//跳转
 #define SBJump @"SBJumpSBJumpSBJumpSBJump"
-/**
- 
- *  屏幕宽度
- */
+//蓝牙状态改变
+#define BlueStateChage @"BlueStateChage"
+#define WriteToBlue @"WriteToBlue"
+#define CallUserName @"callUserName"
+#define DEMO_CALL 1
+
+//屏幕宽度
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
-/**
- *  屏幕高度
- */
+//屏幕高度
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height
 //监测结束
 #define FINSH @"inspectfinsh"
-//蓝牙状态改变
-#define BlueStateChage @"BlueStateChage"
-
-#define WriteToBlue @"WriteToBlue"
 #define iOS7 ([UIDevice currentDevice].systemVersion.doubleValue >= 7.0)
-
 // 应用程序处于调试阶段时系统会自动给我们定义一个名称叫做DEBUG的宏
 // 应用程序发布的时候, 系统会自动去除名称叫做DEBUG的宏
 #ifdef DEBUG  // 判断是否有DEBUG的宏, 如果有就编译下面一句, 如果没有就编译#else后面的一句
@@ -93,9 +81,8 @@
 #define Print(...)
 #endif
 #define NA_LogFunc Print(@"%s", __func__)
-#define CallUserName @"callUserName"
-#define DEMO_CALL 1
 
+#define RGB(r , g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0  blue:(b)/255.0  alpha:(a)]
 
 #define NAFilePath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)lastObject]
 #define NAFilePathAppend(fileName) [NAFilePath stringByAppendingPathComponent:fileName]

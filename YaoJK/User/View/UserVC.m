@@ -18,15 +18,15 @@
     [super viewDidLoad];
     
     UIButton *info = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
-    info.backgroundColor = [UIColor orangeColor];
     [info addTarget:self action:@selector(userinfo) forControlEvents:UIControlEventTouchUpInside];
     [info setTitle:@"详细信息" forState:UIControlStateNormal];
+    [info setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
     [self.view addSubview:info];
     
     UIButton *info2 = [[UIButton alloc] initWithFrame:CGRectMake(220, 100, 100, 100)];
-    info2.backgroundColor = [UIColor orangeColor];
     [info2 addTarget:self action:@selector(userinfow) forControlEvents:UIControlEventTouchUpInside];
     [info2 setTitle:@"详细信息" forState:UIControlStateNormal];
+    [info2 setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
     [self.view addSubview:info2];
 }
 

@@ -58,6 +58,8 @@
 		F8643F82205A4019007C63B6 /* UserVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F8643F81205A4019007C63B6 /* UserVC.m */; };
 		F8643F85205A4F21007C63B6 /* UserInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F8643F84205A4F21007C63B6 /* UserInfoVC.m */; };
 		F8643F88205A52B6007C63B6 /* NSURL+HanEncod.m in Sources */ = {isa = PBXBuildFile; fileRef = F8643F87205A52B6007C63B6 /* NSURL+HanEncod.m */; };
+		F880CBA0205B8C1400E5D4C3 /* HomeHead.m in Sources */ = {isa = PBXBuildFile; fileRef = F880CB9F205B8C1400E5D4C3 /* HomeHead.m */; };
+		F880CBA3205B963400E5D4C3 /* AppDelegate+NeteaseIM.m in Sources */ = {isa = PBXBuildFile; fileRef = F880CBA2205B963400E5D4C3 /* AppDelegate+NeteaseIM.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -162,6 +164,10 @@
 		F8643F84205A4F21007C63B6 /* UserInfoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfoVC.m; sourceTree = "<group>"; };
 		F8643F86205A52B6007C63B6 /* NSURL+HanEncod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+HanEncod.h"; sourceTree = "<group>"; };
 		F8643F87205A52B6007C63B6 /* NSURL+HanEncod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+HanEncod.m"; sourceTree = "<group>"; };
+		F880CB9E205B8C1400E5D4C3 /* HomeHead.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeHead.h; sourceTree = "<group>"; };
+		F880CB9F205B8C1400E5D4C3 /* HomeHead.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeHead.m; sourceTree = "<group>"; };
+		F880CBA1205B963400E5D4C3 /* AppDelegate+NeteaseIM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+NeteaseIM.h"; sourceTree = "<group>"; };
+		F880CBA2205B963400E5D4C3 /* AppDelegate+NeteaseIM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+NeteaseIM.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -571,6 +577,8 @@
 		F8643F74205A3FAB007C63B6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F880CB9E205B8C1400E5D4C3 /* HomeHead.h */,
+				F880CB9F205B8C1400E5D4C3 /* HomeHead.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -600,6 +608,8 @@
 				F8643E21205A1A76007C63B6 /* AppDelegate+Route.m */,
 				F8643F67205A39B1007C63B6 /* AppDelegate+AliCloudPush.h */,
 				F8643F68205A39B1007C63B6 /* AppDelegate+AliCloudPush.m */,
+				F880CBA1205B963400E5D4C3 /* AppDelegate+NeteaseIM.h */,
+				F880CBA2205B963400E5D4C3 /* AppDelegate+NeteaseIM.m */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -689,6 +699,10 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-YaoJK/Pods-YaoJK-resources.sh",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/NIMKit/NIMKit/Resources/NIMKitEmoticon.bundle",
+				"${PODS_ROOT}/NIMKit/NIMKit/Resources/NIMKitResource.bundle",
+				"${PODS_ROOT}/NIMSDK/NIMAVChat/Resources/NMCVideoFilter.bundle",
+				"${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -775,6 +789,7 @@
 				F8643E47205A1DB4007C63B6 /* ResponseLoginUser.m in Sources */,
 				F8643E4A205A1DB4007C63B6 /* UISearchBar+Jusa.m in Sources */,
 				F8643F09205A2040007C63B6 /* UIColor+Extend.m in Sources */,
+				F880CBA0205B8C1400E5D4C3 /* HomeHead.m in Sources */,
 				F8643F01205A2040007C63B6 /* PhotosController.m in Sources */,
 				F8643E50205A1DB4007C63B6 /* JusaNavigationController.m in Sources */,
 				F8643F59205A2040007C63B6 /* NSDate+NJ.m in Sources */,
@@ -782,6 +797,7 @@
 				F8643F0D205A2040007C63B6 /* NetTool.m in Sources */,
 				F8643EFD205A2040007C63B6 /* UIImage+XXYImageColor.m in Sources */,
 				F8643F02205A2040007C63B6 /* SmallCell.m in Sources */,
+				F880CBA3205B963400E5D4C3 /* AppDelegate+NeteaseIM.m in Sources */,
 				F8643F63205A2861007C63B6 /* HomeViewController.m in Sources */,
 				F8643F7F205A3FFF007C63B6 /* SocialCircleVC.m in Sources */,
 			);

@@ -10,4 +10,6 @@ pod 'AFNetworking', '~> 3.0'
 pod 'MJExtension'
 pod 'MBProgressHUD', '~> 1.1.0'
 pod 'MJRefresh'
+pod 'NIMSDK'
+pod 'NIMKit/Full'
 end

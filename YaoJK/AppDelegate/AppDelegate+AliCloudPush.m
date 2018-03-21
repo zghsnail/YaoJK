@@ -14,9 +14,9 @@
 
 
 - (void)initCloudPush{
-    [CloudPushSDK asyncInit:@"24747039" appSecret:@"fe1d22bbd126784ba7e943c5d8154da7" callback:^(CloudPushCallbackResult *res) {
+    [CloudPushSDK asyncInit:AliKey appSecret:AliScreat callback:^(CloudPushCallbackResult *res) {
         if (res.success) {
-            Print(@"Push SDK init success, deviceId: %@", [CloudPushSDK getDeviceId]);
+            Print(@"Push SDK : deviceId: %@", [CloudPushSDK getDeviceId]);
             [JusaTool saveStr:[CloudPushSDK getDeviceId] forKey:DeviceId];
         } else {
             Print(@"Push SDK init failed, error: %@", res.error);
@@ -25,7 +25,7 @@
 }
 
 /**
- *    注册苹果推送，获取deviceToken用于推送
+ *  注册苹果推送，获取deviceToken用于推送
  */
 - (void)registerAPNS:(UIApplication *)application {
     // iOS 8 Notifications
@@ -56,7 +56,7 @@
     Print(@"didFailToRegisterForRemoteNotificationsWithError %@", error);
 }
 /**
- *    注册推送消息到来监听
+ *   注册推送消息到来监听
  */
 - (void)registerMessageReceive {
     [[NSNotificationCenter defaultCenter] addObserver:self
@@ -65,7 +65,7 @@
                                                object:nil];
 }
 /**
- *    处理到来推送消息
+ *   处理到来推送消息
  */
 - (void)onMessageReceived:(NSNotification *)notification {
     CCPSysMessage *message = [notification object];
@@ -82,7 +82,6 @@
     NSDictionary *aps = [userInfo valueForKey:@"aps"];
     // 内容
     NSString *content = [aps valueForKey:@"alert"];
-    
     NSString *title = [content valueForKey:@"title"];
     NSString *body = [content valueForKey:@"body"];
     // iOS badge 清0

@@ -18,7 +18,6 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
@@ -39,6 +38,7 @@
 //        [self performSelector:@selector(showLogin) withObject:nil afterDelay:0.4];
 //    }
     
+    
     return YES;
 }
 
@@ -53,7 +53,9 @@
 
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
+
     
+
 }
 
 
